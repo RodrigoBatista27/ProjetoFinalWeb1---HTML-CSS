@@ -1,0 +1,93 @@
+<!DOCTYPE.html>
+<html lang="pt-br">
+	<head>
+		<meta charset="utf-8">
+		<title> Aula de Web - Aprendendo HTML e CSS </title>
+		<meta name="author" content="Rodrigo">
+		<meta name="description" content="Site de pizzaria com HTML, JS e CSS">
+		<meta name="keywords" content="pizzaria, piu buona, html, css">
+		<link rel="shortcut icon" href="img/oi.png">
+		<link rel="stylesheet" href="css/style.css">
+		<link rel="preconnect" href="https://fonts.googleapis.com">	
+	</head>
+	
+	<body>
+		<header class="container">
+
+			<div class="logo">
+					<img src="img/oi.png" alt="logo da pizzaria" class="img_logo">
+			</div>
+			<div class="title_hd">
+				<h1 class="title_hd"> Piu Buona pizzaria </h1>
+			</div>
+			<div class="social">
+				<form action="http://www.facebook.com.br/" method="post" target="_blank" class="face">  
+					<input type=image src="img/face.jpg" width="100%">
+				</form>
+
+				<form action="https://www.instagram.com/" method="post" target="_blank" class="insta">  
+					<input type=image src="img/insta.jpg" width="100%">
+				</form>
+	
+				<form action="https://web.whatsapp.com/" method="post" target="_blank" class="zap">  
+					<input type=image src="img/zapzap.jpg" width="100%">
+				</form>
+			</div>
+		</header>
+
+        <main class="main-index">
+			<div class="container-2">
+				<nav class="menu">
+					<ul>
+						<li class="lista-cadastro">
+							<a href="index.html">
+								<i class="fa fa-menu">
+									<span class="span-menu">Página Incial</span>
+								</i>
+							</a>
+						</li>
+						<li class="lista-catalogo">
+							<a href="Cadastro.html">
+								<i class="fa fa-catalogo">
+									<span class="span-menu">Cadastro</span>
+								</i>
+							</a>
+						</li>
+						<li class="lista-pedido">
+							<a href="catalogo.html">
+								<i class="fa fa-pedido">
+									<span class="span-pedido">Catálogo</span>
+								</i>
+							</a>
+						</li>
+						<li class="lista-sobre">
+							<a href="sobre.html">
+								<i class="fa fa-sobre">
+									<span class="span-sobre">Sobre</span>
+								</i>
+							</a>
+						</li>
+					</ul>
+				</nav>
+			</div>
+            <section class="container-pedido">
+				<div class="pedido">
+				<h1>Confirmação de Pedido:</h1>
+				<br>
+				<h2>Cliente: Rodolfo Rodrigues</h2>
+				<br>
+				<h2>Endereço: Alberto Bins, 320</h2>
+				<br>
+				<h2>CEP: 90000-000</h2>
+            </section>
+			<section class="container-pedido-2">
+				<div class="pedido-2">
+					<h2 style="width:100%">Forma de Pagamento:</h2>
+					<h2 style=float:left;margin-right:5px;margin-top:-8px>Cartão de Crédito Final:</h2>
+					<h3 style=float:right;margin-top:-8px>1234</h3>
+					</div>
+			</section>
+		</main>
+		<button id="confirm">Confirmar Pedido</button>
+		<button id="edit">Editar Informações</button>
+    </body>

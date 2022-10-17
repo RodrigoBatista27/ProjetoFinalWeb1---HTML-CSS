@@ -1,0 +1,358 @@
+@charset "utf-8";
+
+
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.title_hd{
+    align-items: center;
+}
+
+header .logo{
+    background-color: #FF0000;
+    display: flex;
+    justify-content: left;
+}
+
+body{
+    overflow: hidden;
+    background: -webkit-gradient(linear, left top, right top, from(#C30D0D  ), to(#BC3518)) no-repeat;
+    background: -moz-linear-gradient(left, red, blue);
+    filter:progid:DXImageTransform.Microsoft.Gradient(GradientType=1, StartColorStr='red', EndColorStr='black');   
+}
+
+.main-index{
+    display: block;
+    justify-content: end;
+
+}
+
+.menu li {
+    margin-top: 20px;
+    margin-left: 15%;
+    color: black;
+}
+
+.menu li > a{
+    color: black;
+}
+
+.container-2{
+    padding-top: 50px;
+    width: 180px;
+    float: left;
+    height: 100%;
+    background-color: #A50D0D;
+}
+
+.container{
+    max-width: 100%;
+    margin-inline: 2%   ;
+}
+
+.social{
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    width: 200px;
+    height: 121px;
+}
+
+.section_1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center  ;
+    margin-bottom: 20px;
+}
+
+.section_2{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.logo{
+    display: flex;
+}
+
+.img_logo{
+    width:100px;
+}
+
+.img_index{
+    max-height: 162px;
+}
+
+.face{
+    display: flex;
+    float: right;
+    height: 35px;
+}
+
+.insta{
+    display: flex;
+    float: right;
+    height: 35px;
+    margin-inline: 5px;
+}
+
+.zap{
+    display: flex;
+    float: right;
+    height: 35px;
+}
+
+.img_2{
+        width: 60%;
+        margin: auto;
+        display: block;
+}
+
+.form-1{
+    display: block;
+    float: left;
+    width: fit-content;
+    height: 300px;
+    margin-top: 15px;
+}
+
+.form-2{
+    display: block;
+    float: right;
+    width: fit-content;
+    height: 300px;
+    margin-top: 15px;
+
+}
+
+.forms{
+    max-height: 50px;
+    margin-bottom: 20px;
+}
+
+.field-1{
+    display: block;
+    float: left;
+    border: 0;
+}
+
+.field-2{
+    display: block;
+    float: right;
+    border: 0;
+}
+
+img:hover{
+	-moz-transform:scale(1.2);
+	-webkit-transform:scale(1.2);
+	transform:scale(1.2);
+	transition-duration:0.6s;
+	opacity:1;
+    border-radius: 5px;
+}
+
+img{
+    border-radius: 5px;
+}
+
+.text-input{
+    width: 2px;
+}
+
+.container-pedido{
+    display:flex;
+    width: 400px;
+    height: 500px;
+    float: left;
+    margin-left: 15px;
+}
+
+
+.container-pedido-2{
+    float: right;
+    width: 700px;
+    height: 400px;
+    margin-right: 15px;
+}
+
+.pedido-2{
+    float: right;
+}
+
+#edit{
+    float: right;
+    font-size: large;
+    margin-right: 80px;
+    height: 28px;
+    background-color: purple;
+    border-radius: 15px;
+}
+
+#confirm{
+    float: right;
+    font-size: large;
+    margin-right: 50px;
+    height: 28px;
+    background-color: purple;
+    border-radius: 15px;
+}
+
+#nome{
+    margin-left: 50px;
+    border-radius: 5px;
+}
+
+#endereco{
+    width: 196px;
+    margin-left: 96px;
+    border-radius: 5px;
+}
+
+#cep{
+    width: 90;
+    margin-left: 127px;
+    border-radius: 5px;
+}
+
+#telefone{
+    margin-left: 100px;
+    border-radius: 5px;
+}
+
+#senha{
+    margin-left: 117px;
+    border-radius: 5px;
+}
+
+#num-cartao{
+    border-radius: 5px;
+}
+
+#validade{
+    float: right;
+    border-radius: 5px;
+}
+
+#cvv{
+    float: right;
+    border-radius: 5px;
+}
+
+#titular{
+    float: right;
+    border-radius: 5px;
+}
+
+#cadastro-tl{
+    margin-left: 190px;
+}
+
+#salvar{
+    margin-left: 160px;
+    margin-top: 180;
+    border-radius: 15px;
+    background-color: purple;
+    height: 26px;
+    font-size: large;
+}
+
+.container-catalogo{
+    margin-left: 250px;
+    margin-top: 50px;
+}
+#pizza-chocolate{
+    float: left;
+    
+}
+
+#pizza-calabresa{
+    float: left;
+    margin-left: 80px;
+}
+#pizza-queijo{
+    float:left;
+    margin-left:80px; 
+}
+#menos-1{
+    float: right;
+    border-radius: 360px;
+    background-color: red;
+    font-size: 16px;
+}
+#mais-1{
+    float: right;
+    border-radius: 360px;
+    background-color: red;
+    font-size: 16px;
+    margin-right: 10px;
+
+}
+#menos-2{
+    float: right;
+    border-radius: 360px;
+    background-color: red;
+    font-size: 16px;
+}
+#mais-2{
+    float: right;
+    border-radius: 360px;
+    background-color: red;
+    font-size: 16px;
+    margin-right: 10px;
+}
+#menos-3{
+    float: right;
+    border-radius: 360px;
+    background-color: red;
+    font-size: 16px;
+}
+#mais-3{
+    float: right;
+    border-radius: 360px;
+    background-color: red;
+    font-size: 16px;
+    margin-right: 10px;
+}
+
+#img-carrinho{
+    border-radius: 15px;
+    float: right;
+    margin-right: 120px;
+    margin-left: 10px;
+}
+
+button:hover{
+    -moz-transform:scale(1.1);
+	-webkit-transform:scale(1.1);
+	transform:scale(1.1);
+	transition-duration:0.5s;
+	opacity:1;
+}
+
+#iframe{
+    margin-left: 460px;
+}
+#div-carrinho{
+    float: right;
+    margin-top: 100px;
+    display: flex;
+    align-items: center;
+}
+
+#pizzas{
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+#total{
+    margin-left: 5px;
+}
+
+#queijo-index{
+    margin-left: 5px;
+}

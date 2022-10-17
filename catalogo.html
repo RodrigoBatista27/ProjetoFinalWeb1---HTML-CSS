@@ -1,0 +1,106 @@
+<!DOCTYPE.html>
+<html lang="pt-br">
+	<head>
+		<meta charset="utf-8">
+		<title> Aula de Web - Aprendendo HTML e CSS </title>
+		<meta name="author" content="Rodrigo">
+		<meta name="description" content="Site de pizzaria com HTML, JS e CSS">
+		<meta name="keywords" content="pizzaria, piu buona, html, css">
+		<link rel="shortcut icon" href="img/oi.png">
+		<link rel="stylesheet" href="css/style.css">
+		<script src="js/js.js"></script>
+		<link rel="preconnect" href="https://fonts.googleapis.com">	
+	</head>
+	
+	<body>
+		<header class="container">
+
+			<div class="logo">
+					<img src="img/oi.png" alt="logo da pizzaria" class="img_logo">
+			</div>
+			<div class="title_hd">
+				<h1 class="title_hd"> Piu Buona pizzaria </h1>
+			</div>
+			<div class="social">
+				<form action="http://www.facebook.com.br/" method="post" target="_blank" class="face">  
+					<input type=image src="img/face.jpg" width="100%">
+				</form>
+
+				<form action="https://www.instagram.com/" method="post" target="_blank" class="insta">  
+					<input type=image src="img/insta.jpg" width="100%">
+				</form>
+	
+				<form action="https://web.whatsapp.com/" method="post" target="_blank" class="zap">  
+					<input type=image src="img/zapzap.jpg" width="100%">
+				</form>
+			</div>
+		</header>
+
+        <main class="main-index">
+			<div class="container-2">
+				<nav class="menu">
+					<ul>
+						<li class="lista-cadastro">
+							<a href="index.html">
+								<i class="fa fa-menu">
+									<span class="span-menu">Página Incial</span>
+								</i>
+							</a>
+						</li>
+						<li class="lista-catalogo">
+							<a href="Cadastro.html">
+								<i class="fa fa-catalogo">
+									<span class="span-menu">Cadastro</span>
+								</i>
+							</a>
+						</li>
+						<li class="lista-pedido">
+							<a href="pedido.html">
+								<i class="fa fa-pedido">
+									<span class="span-pedido">Pedido</span>
+								</i>
+							</a>
+						</li>
+						<li class="lista-sobre">
+							<a href="sobre.html">
+								<i class="fa fa-sobre">
+									<span class="span-sobre">Sobre</span>
+								</i>
+							</a>
+						</li>
+					</ul>
+				</nav>
+            </div>
+        </main>
+        <h1 id="catalogo-tl">Catálogo:</h1>
+
+        <section class="container-catalogo">
+            <div id="pizza-chocolate" class="pizza-1">
+                <img src="img/chocolate.jpg" alt="chocolate">
+                <h3>pizza de chocolate</h3>
+                <button id="menos-1">-</button>    
+                <button id="mais-1">+</button>
+            </div>
+
+            <div id="pizza-calabresa" class="pizza-2">
+                <img src="img/calabresa.jpg" alt="pizza de calabresa">
+                <h3>Pizza de Calabresa</h3>
+                <button id="menos-2">-</button>    
+                <button id="mais-2">+</button>
+            </div>
+
+            <div id="pizza-queijo"class="pizza-3">
+                <img src="img/queijo.jpg" alt="pizza de queijo">
+                <h3>  pizza de queijo</h3>
+                <button id="menos-3">-</button>
+                <button id="mais-3" type="button">+</button>
+                
+            </div>
+        </section>
+		<div id="div-carrinho">
+		Pizzas: <input type="text" name="format" value="0" id="pizzas" size="2"/>
+		Total: <input type="text" name="total" value="0" id="total" value=""/>
+		<input id="img-carrinho" type=image src="img/carrinho.png" width="40px">
+        </div>
+
+    </body>

@@ -1,0 +1,138 @@
+<!DOCTYPE.html>
+<html lang="pt-br">
+	<head>
+		<meta charset="utf-8">
+		<title> Aula de Web - Aprendendo HTML e CSS </title>
+		<meta name="author" content="Rodrigo">
+		<meta name="description" content="Site de pizzaria com HTML, JS e CSS">
+		<meta name="keywords" content="pizzaria, piu buona, html, css">
+		<link rel="shortcut icon" href="img/oi.png">
+		<script src="js/js.js"></script>
+		<link rel="stylesheet" href="css/style.css">
+		<link rel="preconnect" href="https://fonts.googleapis.com">	
+	</head>
+	
+	
+	<body>
+		<header class="container">
+
+			<div class="logo">
+					<img src="img/oi.png" alt="logo da pizzaria" class="img_logo">
+			</div>
+			<div class="title_hd">
+				<h1 class="title_hd"> Piu Buona pizzaria </h1>
+			</div>
+			<div class="social">
+				<form action="http://www.facebook.com.br/" method="post" target="_blank" class="face">  
+					<input type=image src="img/face.jpg" width="100%">
+				</form>
+
+				<form action="https://www.instagram.com/" method="post" target="_blank" class="insta">  
+					<input type=image src="img/insta.jpg" width="100%">
+				</form>
+	
+				<form action="https://web.whatsapp.com/" method="post" target="_blank" class="zap">  
+					<input type=image src="img/zapzap.jpg" width="100%">
+				</form>
+			</div>
+		</header>
+		<div class="container-2">
+			<nav class="menu">
+				<ul>
+					<li class="lista-cadastro">
+						<a href="index.html">
+							<i class="fa fa-menu">
+								<span class="span-menu">Página Inicial</span>
+							</i>
+						</a>
+					</li>
+					<li class="lista-catalogo">
+						<a href="catalogo.html">
+							<i class="fa fa-catalogo">
+								<span class="span-menu">Catálogo</span>
+							</i>
+						</a>
+					</li>
+					<li class="lista-pedido">
+						<a href="pedido.html">
+							<i class="fa fa-pedido">
+								<span class="span-pedido">Pedido</span>
+							</i>
+						</a>
+					</li>
+					<li class="lista-sobre">
+						<a href="sobre.html">
+							<i class="fa fa-sobre">
+								<span class="span-sobre">Sobre</span>
+							</i>
+						</a>
+					</li>
+				</ul>
+			</nav>
+		</div>
+		<div class="container-3">
+			<h1 id="cadastro-tl">Cadastro:</h1>
+			<form class="form-1">
+				<fieldset class="field-1">
+					<div class="forms">
+						<label>Nome Completo:</label>
+						<input type="text" name="nome" id="nome" maxlength="26" required>
+					</div>
+
+					<div class="forms">
+						<label>Endereço:</label>
+						<input type="text" name="endereco" id="endereco" size="50" required>
+					</div>
+
+					<div class="forms">
+						<label>CEP:</label>
+						<input type="text" name="cep" id="cep" required>
+					</div>
+					
+					<div class="forms">
+						<label>Telefone:</label>
+						<input type="text" name="telefone" id="telefone" required>
+					</div>
+					
+					<div class="forms">
+						<label>Senha:</label>
+						<input type="password" name="senha" id="senha" required>
+					</div>
+				</fieldset>
+			</form>
+			
+			<form class="form-2">
+				<fieldset class="field-2">
+											
+					<div class="forms">
+						<label>Número do Cartão:</label>
+						<input type="text" name="num-cartao" id="num-cartao" required>
+					</div>
+					<div class="forms">
+						<label>Validade:</label>
+						<input type="text" name="validade" id="validade" required>
+					</div>
+					<div class="forms">
+						<label>CVV:</label>
+						<input type="text" name="cvv" id="cvv"  maxlength="3" pattern="" required>
+					</div>
+					<div class="forms">
+						<label>Nome do Titular:</label>
+						<input type="text" name="titular" id="titular" required>
+					</div>
+					<button id="salvar">Salvar</button>
+				</fieldset>
+			</form>
+		</div>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js" integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+		<script type="text/javascript" src="js/jquery.mask.js"></script>
+		<script type="text/javascript">
+			$(document).ready(function(){
+			$('#num-cartao').mask("9999 9999 9999 9999");
+			$('#validade').mask("99/99");
+			$('#cep').mask("99999-999");
+			$('#telefone').mask("(99)9 9999-9999");
+
+			});
+		</script>
+	</body>
